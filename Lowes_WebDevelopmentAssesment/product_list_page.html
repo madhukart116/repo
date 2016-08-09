@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Lowe's Assessment">
+      <title>Madhukar Thangada - Interview Test</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+   </head>
+   <body ng-app="productlist" ng-controller="listcontroller">
+     <div class="wrapper">
+       <product ng-repeat="obj in productList" info="obj" ng-mouseenter="hover = true" ng-class="{expand: hover}"></product>
+       <div class="clearfix"></div>
+     </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" charset="utf-8"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.min.js"></script>
+      <script src="assets/js/productList.js" charset="utf-8"></script>
+   </body>
+</html>

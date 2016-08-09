@@ -1,0 +1,1 @@
+We can also leverage audio tag of html5 for achieving this task.

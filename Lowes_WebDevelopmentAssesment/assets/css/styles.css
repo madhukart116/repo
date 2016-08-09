@@ -1,0 +1,130 @@
+body {
+  background-color: #e5e5e5;
+  font-family: sans-serif;
+}
+.wrapper {
+  width: 100%;
+  max-width: 964px;
+  margin: 0 auto;
+  /*padding: 15px 25px 15px 35px;*/
+  background-color: #FFFFFF;
+  /*text-align: center;*/
+}
+.item {
+  border: 2px solid #bebebe;
+  /*width: 27.5%;*/
+  background-color: #e5e5e5;
+  padding: 50px 15px 15px;
+  text-align: center;
+  margin: 20px;
+  float: left;
+}
+
+.item-img {
+  /*width: 100px;*/
+  margin: 0 auto 10px;
+}
+.item-img img {
+  transition: opacity 1s ease-in;
+}
+.expand .item > div {
+  float: left;
+  margin-right: 30px;
+  font-size: 16px;
+}
+.item-desc {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 20px 0;
+  height: 65px;
+}
+.item-price {
+  font-size: 24px;
+  padding: 15px 0 20px;
+}
+.clearfix {
+  float: none;
+  clear: both;
+}
+button {
+  background-color: #b7b7b7;
+  padding: 10px;
+  font-size: 24px;
+  border: 2px solid #787878;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #03a9f4;
+}
+.expand .view-more, .md, .expand .sm, .addToCart {
+  display: none;
+}
+.expand .item-desc {
+  width: 41%;
+  height: auto;
+}
+.item-desc ul {
+  display: none;
+}
+.expand ul {
+  display: block;
+      list-style-type: disc;
+      text-align: left;
+      padding-left: 30px;
+      margin-top: 15px;
+}
+.expand ul li {
+  line-height: normal;
+    padding-bottom: 5px;
+}
+.expand .addToCart {
+    width: 25%;
+    margin-right: 0;
+}
+.expand .item .item-price {
+  float: right;
+  margin-right: 10%;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.expand .md,  .expand .addToCart{
+  display: block;
+}
+product {
+  display: block;
+  padding: 15px;
+}
+product.expand {
+  width: auto;
+  -webkit-transition: width 0.5s;
+  transition-timing-function: linear;
+  padding: 15px;
+}
+.product .item {
+  min-width: 89%;
+}
+@media only screen and (min-width: 600px)  {
+  product {
+    width: 50%;
+    float: left;
+    padding: 0;
+  }
+  product.expand {
+    float: left;
+  }
+  .product .item {
+    min-width: auto;
+  }
+  .expand .item {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 800px)  {
+  product {
+    width: 33.33%;
+  }
+}
